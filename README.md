@@ -92,7 +92,7 @@ for helping to make the world a better place!
 
 - **Rust**, **Go** and **D**, for opening the path towards new, safer software. 
 - **Java** and **JavaScript**, for introducing virtual machines into our daily lifes.
-- **Plan 9**, **Minix** and **GNU Hurd**, for teaching us that distributed systems are lit.
+- **Plan 9**, **Minix** and **GNU Hurd**, for teaching us that microkernel-based, distributed systems are lit.
 - **IPFS** and **ZeroNet**, for teaching us that distributed networks are lit.
 - **BeOS** and its son **Haiku**, for showing us there's life beyond hierarchical filesystems.
 - **PGP** and **Bitcoin**, for giving control back to people.
