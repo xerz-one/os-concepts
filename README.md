@@ -70,7 +70,7 @@ Hopefully you may even manage to make it formal and presentable!
 - Dynamic user interface
 	- Without a default, kernel-level way of interacting
 	- Preferably a graphical server, even for text input
-		- Instead of SSH, a graphical terminal session (?)
+		- Instead of a text terminal session, a graphical one
 			- No need to make it this way, just saying (???)
 	- Out-of-the-box 3D support
 		- Vulkan would be great - imagine this thing on game consoles!
