@@ -21,12 +21,18 @@ Hopefully you may even manage to make it formal and presentable!
 ## Proposed ideas
 
 - Microkernel (modular) with an integrated virtual machine
+	- Unopinionated microkernel, would handle very little tasks
+	- By "integration" then we mean "both come tightly bundled together"
 	- To heavily consider: JVM, V8, Servo
 		- Java bytecode or WebAssembly?
 	- Designed for 64 and 128 bits processors from the start
+		- And yes, little and big endian processors
 - Native isolation via virtual machine
+	- Spawns a VM per process
+		- Hopefully this will be cheap enough
 	- Compatible with AOT compilation
-	- Probably also LXC-style containers?
+		- JIT compilation probably won't hurt either
+	- Would also support (LXC-style?) containers
 - Kernel / virtual machine programmed on Rust
 	- Systems language with high-level abstractions
 	- Designed to meet the current and future needs
@@ -45,10 +51,14 @@ Hopefully you may even manage to make it formal and presentable!
 	- For protecting sent information
 - Native support for multiple programming languages
 - Virtualization support
-	- Via containers?
+	- Via containers
 	- Should also be designed to be *contained*
+	- Useful for (indirectly) supporting other OSes
+	- Useful for safely running binaries
 - Net-distributed resource management
 	- Device management *a la Plan 9 / Hurd*
+		- Would everything be a file?
+			- Redox has URLs instead, for instance
 	- Own filesystem
 		- Non-hierarchical, if possible
 		- Organized by metadata, *a la BeFS*
@@ -102,3 +112,8 @@ for helping to make the world a better place!
 - **Lisp**, **Haskell** and **Guix**, for teaching me the goods of functional programming.
 - **Pacman** and the **Arch User Repository**, for rocking so much.
 
+## Post Scriptum
+
+Thank you to all at 
+[/r/osdev](https://www.reddit.com/r/osdev/comments/5abm7t/i_would_like_to_start_a_debate_on_operating/), 
+especially @mpasteven, for your contributions!
